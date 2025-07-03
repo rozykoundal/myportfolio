@@ -48,7 +48,7 @@ export default function Home() {
                   🚀 Hire Me
                 </Link>
                 <Link
-                  href="/Munish-cv.pdf"
+                  href="/Rozy-cv.pdf"
                   download
                   className="border-2 border-pink-400 text-pink-400 px-6 py-3 rounded-full font-semibold hover:bg-pink-50 hover:text-black transition duration-300 hover:scale-105"
                 >
