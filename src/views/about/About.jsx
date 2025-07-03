@@ -37,7 +37,7 @@ const sectionVariant = {
 
 export default function AboutContent() {
   return (
-    <div className="w-full min-h-screen px-4 sm:px-6 md:px-10 py-16 bg-gradient-to-br from-black via-gray-900 to-pink-900 text-white pt-20">
+    <div className="w-full min-h-screen px-4 sm:px-6 md:px-10 py-16 bg-gradient-to-br from-black via-gray-900 to-pink-900 text-white pt-30">
       <div className="space-y-16">
 
         {/* ✅ Image + Intro */}
