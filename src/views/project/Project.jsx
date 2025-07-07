@@ -16,7 +16,7 @@ const projects = [
     description:
       "Modern, responsive portfolio built with Next.js and Tailwind CSS, featuring GSAP animations and clean UI/UX.",
     image: "",
-    link: "https://munish-portfolio-gamma.vercel.app",
+    link: "https://rozy-koundal.vercel.app/",
   },
 ];
 
