@@ -9,7 +9,7 @@ export default function Home() {
   const [text] = useTypewriter({
     words: ["Frontend Developer", "React Developer"],
     loop: true,
-    typeSpeed: 100,
+    typeSpeed: 90,
     deleteSpeed: 50,
     delaySpeed: 1500,
   });
@@ -17,10 +17,9 @@ export default function Home() {
   return (
     <>
       <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-pink-900 text-white relative overflow-hidden backdrop-blur-md">
-        {/* ✅ Hero Section */}
         <div className="flex items-center justify-center pt-5 lg:pt-22 px-6 sm:px-12 max-w-7xl mx-auto min-h-screen">
-          <div className="flex flex-col-reverse lg:flex-row items-center justify-center w-full gap-10">
-            {/* ✅ Text Content */}
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-15">
+            {/* ✅ Text Content with motion */}
             <motion.div
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
@@ -30,7 +29,7 @@ export default function Home() {
               <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">
                 Hello! I&apos;m a
                 <br />
-                <span className="text-pink-400">
+                <span className="text-pink-400 inline-block min-h-[60px]">
                   {text}
                   <Cursor cursorColor="#EC4899" />
                 </span>
@@ -57,21 +56,17 @@ export default function Home() {
               </div>
             </motion.div>
 
-            {/* ✅ Profile Image */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8 }}
-            >
+            {/* ✅ Profile Image without motion (STATIC) */}
+            <div className="flex-shrink-0">
               <Image
-                src="/myimg1.jpeg" // <-- Add your image path here
+                src="/myimg1.jpeg"
                 alt="Profile Image"
-                width={300}
-                height={300}
-                className="rounded-full object-cover shadow-lg"
+                width={400}
+                height={400}
                 priority
+                className="rounded-full object-cover"
               />
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>
